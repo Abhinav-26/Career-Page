@@ -1,0 +1,216 @@
+{% load static %}
+<div class="header" id="header">
+    <div class="header-inner" id="header-inner">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg my-navbar py-lg-0 py-sm-0 py-0 px-lg-0">
+                <a class="navbar-brand" style="color: #000a14;" href="#"><img src="{% static 'images/d-logo.png' %}" alt="">devtron</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" data-scroll="out">
+                        <div id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse mobile-menu d-flex flex-lg-row flex-column flex-xl-row justify-content-lg-end justify-content-md-start"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav align-self-stretch">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Website
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Community
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Blogs
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0 ml-2 align-self-stretch">
+                        <a href="https://github.com/devtron-labs/devtron.git" target="_blank" class="github-star" style="text-decoration: none; color: #000a14;">
+                            <div class="github-star-right">
+                                <img style="height: 17px; width: 17px; margin-right:4px;" src="https://img.icons8.com/ios-glyphs/48/000000/github.png"/>
+                                Stars
+                            </div>
+                            <div class="github-star-count">
+                                <span id="star-count">130</span>
+                            </div>
+                        </a>
+                    </form>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<div class="intro-section custom-owl-carousel" id="home-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mr-auto">
+
+                <div class="owl-carousel slide-one-item-alt-text">
+                    <div class="slide-text">
+                        <h1>Welcome to Devtron</h1>
+                        <p class="mb-5">We provide best carrer opportunities to the young minds. We provide best carrer o
+                            pportunities to the young minds. We provide best carrer opportunities to the young minds. We provide best carrer 
+                            opportunities to the young minds. </p>
+                        <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                    </div>
+                    <div class="slide-text">
+                        <h1>Be the Change in Society</h1>
+                        <p class="mb-5">We provide best carrer opportunities to the young minds. We provide best carrer o
+                            pportunities to the young minds. We provide best carrer opportunities to the young minds. We provide best carrer 
+                            opportunities to the young minds.</p>
+                        <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                    </div>
+                    <div class="slide-text">
+                        <h1>Work with Industry Experts</h1>
+                        <p class="mb-5">We provide best carrer opportunities to the young minds. We provide best carrer o
+                            pportunities to the young minds. We provide best carrer opportunities to the young minds. We provide best carrer 
+                            opportunities to the young minds.</p>
+                        <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                    </div>
+                    <div class="slide-text">
+                        <h1>Work with Industry Experts</h1>
+                        <p class="mb-5">We provide best carrer opportunities to the young minds. We provide best carrer o
+                            pportunities to the young minds. We provide best carrer opportunities to the young minds. We provide best carrer 
+                            opportunities to the young minds.</p>
+                        <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 ml-auto">
+
+                <div class="owl-carousel slide-one-item-alt" style="object-fit: contain;">
+                    <img  src="{% static 'images/welcome.png' %}" alt="Image" class="img-fluid">
+                    <img src="{% static 'images/img_2.jpg' %}" alt="Image" class="img-fluid">
+                    <img src="{% static 'images/img_3.jpg' %}" alt="Image" class="img-fluid">
+                    <img src="{% static 'images/img_4.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+
+                <div class="owl-custom-direction">
+                    <a href="#" class="custom-prev"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#" class="custom-next"><i class="fas fa-chevron-right"></i></span></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+<script>
+
+
+    $('.slide-one-item-alt').owlCarousel({
+        center: false,
+        items: 1,
+        dots: false,
+        loop: true,
+        margin: 0,
+        smartSpeed: 1000,
+        autoplay: true,
+        pauseOnHover: true,
+        onDragged: function (event) {
+            console.log('event : ', event.relatedTarget['_drag']['direction'])
+            if (event.relatedTarget['_drag']['direction'] == 'left') {
+                $('.slide-one-item-alt-text').trigger('next.owl.carousel');
+            } else {
+                $('.slide-one-item-alt-text').trigger('prev.owl.carousel');
+            }
+        }
+    });
+
+
+    $('.slide-one-item-alt-text').owlCarousel({
+        center: false,
+        items: 1,
+        dots: false,
+        loop: true,
+        margin: 0,
+        smartSpeed: 1000,
+        autoplay: true,
+        pauseOnHover: true,
+        onDragged: function (event) {
+            console.log('event : ', event.relatedTarget['_drag']['direction'])
+            if (event.relatedTarget['_drag']['direction'] == 'left') {
+                $('.slide-one-item-alt').trigger('next.owl.carousel');
+            } else {
+                $('.slide-one-item-alt').trigger('prev.owl.carousel');
+            }
+        }
+    });
+
+
+
+
+    $('.custom-next').click(function (e) {
+        e.preventDefault();
+        $('.slide-one-item-alt').trigger('next.owl.carousel');
+        $('.slide-one-item-alt-text').trigger('next.owl.carousel');
+    });
+
+    $('.custom-prev').click(function (e) {
+        e.preventDefault();
+        $('.slide-one-item-alt').trigger('prev.owl.carousel');
+        $('.slide-one-item-alt-text').trigger('prev.owl.carousel');
+    });
+
+</script>
+
+<script>
+
+    $(document).ready(function () {
+        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+            $(this).toggleClass('ham-open');
+        });
+    });
+</script>
+
+<script>
+
+    $(document).ready(function () {
+        $('.navbar-toggler,.overlay').on("click", function () {
+            $(".mobile-menu,.overlay").toggleClass('open-nav');
+        });
+    });
+</script>
+
+<script>
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() < 60) {
+                $('.header-inner').removeClass('navbar-scroll');
+            } else {
+                $('.header-inner').addClass('navbar-scroll');
+            }
+        });
+    });
+</script>

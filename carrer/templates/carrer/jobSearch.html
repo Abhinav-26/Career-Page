@@ -1,0 +1,110 @@
+{% load static %}
+
+<div class="job">
+    <div class="heading">
+        <b>What</b> Our Employee Says 
+    </div>
+    <div class="emp-container">
+        <div class="indicator">
+            <span class="indi-btn active"></span>
+            <span class="indi-btn"></span>
+            <span class="indi-btn"></span>
+            <span class="indi-btn"></span>
+        </div>
+        <div class="emp-review">
+            <div class="slide-row" id="review-slide">
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta 
+                            deleniti accusantium explicabo consequuntur nobis natus sunt eligendi numquam? 
+                            Sapiente et sequi soluta alias amet reiciendis repudiandae iste deleniti fugiat rem.
+                        </p>
+                        <h3>Hritik</h3>
+                        <p>Data Analyst</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="{% static 'images/img_1.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta 
+                            deleniti accusantium explicabo consequuntur nobis natus sunt eligendi numquam? 
+                            Sapiente et sequi soluta alias amet reiciendis repudiandae iste deleniti fugiat rem.
+                        </p>
+                        <h3>Abhishek</h3>
+                        <p>Data Engineer</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="{% static 'images/img_2.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta 
+                            deleniti accusantium explicabo consequuntur nobis natus sunt eligendi numquam? 
+                            Sapiente et sequi soluta alias amet reiciendis repudiandae iste deleniti fugiat rem.
+                        </p>
+                        <h3>Jagmeet</h3>
+                        <p>UI Designer</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="{% static 'images/img_3.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta 
+                            deleniti accusantium explicabo consequuntur nobis natus sunt eligendi numquam? 
+                            Sapiente et sequi soluta alias amet reiciendis repudiandae iste deleniti fugiat rem.
+                        </p>
+                        <h3>Abhinav</h3>
+                        <p>DevOps</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="{% static 'images/img_4.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    var btn = document.getElementsByClassName("indi-btn");
+    var slide = document.getElementById("review-slide");
+
+    btn[0].onclick= function(){
+        slide.style.transform = "translateX(0px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[1].onclick= function(){
+        slide.style.transform = "translateX(-800px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[2].onclick= function(){
+        slide.style.transform = "translateX(-1600px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[3].onclick= function(){
+        slide.style.transform = "translateX(-2400px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+</script>
