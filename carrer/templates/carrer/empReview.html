@@ -1,6 +1,6 @@
 {% load static %}
 
-<div class="review">
+<!-- <div class="review">
     <div class="review-heading">
         <b>What</b> Our Employee Says 
     </div>
@@ -107,4 +107,99 @@
         }
         this.classList.add("active");
     }
+</script> -->
+<div class="emp-section">
+    <div>
+        <div class="review-heading">
+            <b>What</b> Our Employee Quote 
+        </div>
+
+        <div class="review-text">
+            <p> Here's what our Employees Quote about Devtron
+            </p>
+        </div>
+    </div>
+
+  <div class="blog-slider">
+    <div class="blog-slider__wrp swiper-wrapper">
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img
+            src="https://images.unsplash.com/photo-1569124589354-615739ae007b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+            alt=""
+          />
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">DevOps Lead</span>
+          <div class="blog-slider__title">Abhinav Dubey</div>
+            <div class="blog-slider__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+                voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+                voluptate repellendus magni illo ea animi?
+            </div>
+          <!-- <a href="#" class="blog-slider__button">READ MORE</a> -->
+        </div>
+      </div>
+
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img
+            src="https://images.unsplash.com/photo-1595868228899-abc8fabb3447?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+            alt=""
+          />
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">Data Analyst</span>
+          <div class="blog-slider__title">Hritik Gupta</div>
+          <div class="blog-slider__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+            voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+            voluptate repellendus magni illo ea animi?
+          </div>
+          <!-- <a href="#" class="blog-slider__button">READ MORE</a> -->
+        </div>
+      </div>
+
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          <img
+            src="https://images.unsplash.com/photo-1524638431109-93d95c968f03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            alt=""
+          />
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">UI/UX Designer</span>
+          <div class="blog-slider__title">Jagmeet Saini</div>
+          <div class="blog-slider__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+            voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+            voluptate repellendus magni illo ea animi?
+          </div>
+          <!-- <a href="#" class="blog-slider__button">READ MORE</a> -->
+        </div>
+      </div>
+    </div>
+    <div class="blog-slider__pagination"></div>
+  </div>
+</div>
+
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
+></script>
+
+<script>
+  var swiper = new Swiper(".blog-slider", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: true,
+    mousewheel: {
+      invert: false,
+    },
+    // autoHeight: true,
+    pagination: {
+      el: ".blog-slider__pagination",
+      clickable: true,
+    },
+  });
 </script>
