@@ -346,6 +346,10 @@ intro-section,
   font-size: 1.2rem;
   font-weight: 500;
 }
+.line{
+  width: 80vw; 
+  margin-top: 10vh;
+}
 
 @media only screen and (max-width: 540px){
   .why{
@@ -354,25 +358,29 @@ intro-section,
   .why-heading{
     font-size: 1rem;
     padding-top: 2rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 
   .why-text p{
     font-size: 1.4rem;
-    padding-left:1rem;
+    padding-left:2rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
   }
   .why-values-upper, .why-values-lower{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: block;
   }
   .left-data, .right-data{
-    width: 90vw;
+    width: 80vw;
   }
   .why-values-lower{
     margin-top: 0px;
+  }
+  .line{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 }
 /********************************** Why Devtron Section ******************************/
@@ -498,12 +506,12 @@ intro-section,
 @media screen and (max-width: 540px){
   .review-heading{
     font-size: 1rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 
   .review-text p{
     font-size: 1.4rem;
-    padding-left:1rem;
+    padding-left:2rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
   }
@@ -766,7 +774,7 @@ intro-section,
 /********************************* Employee Review Section END ****************************/
 
 /************************************* Gallery Section END ********************************/
-.instagram > h1 {
+.instagram > span {
   font-size: 1.4rem;
   padding-top: 4rem;
   padding-left: 10%;
@@ -774,7 +782,7 @@ intro-section,
   font-weight: 500;
 }
 
-.instagram .insta-text{
+.instagram .insta-text p{
   font-size: 2rem;
   padding-bottom: 4rem;
   padding-left: 10%;
@@ -799,11 +807,25 @@ intro-section,
 }
 
 @media screen and (max-width: 540px){
+
+  .instagram span{
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .instagram .insta-text p{
+    font-size: 1.4rem;
+    padding-left:2rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .instagram .images{
     grid-template-areas:
-      "img0 img0"
-      "img1 img2"
-      "img3 img2";
+      "img6 img6"
+      "img4 img1"
+      "img5 img1";
   }
   .instagram {
     margin-bottom: 4vh;
@@ -813,13 +835,13 @@ intro-section,
     width: 90vw;
     height: 90vh;
   }
-  .img-4 {
+  .img-3 {
     display: none;
   }
-  .img-5 {
+  .img-0 {
     display: none;
   }
-  .img-6 {
+  .img-2 {
     display: none;
   }
   .img-7 {
