@@ -301,6 +301,181 @@ intro-section,
 
 /******************************** HamBurger Animation END ****************************/
 
+/************************************* Vacancies at Devtron **************************/
+.jobs{
+  height: 100%;
+  width: 100vw;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.jobs-heading{
+  font-size: 1.4rem;
+  padding-top: 4rem;
+  /* padding-left: 10%; */
+  color: #7b7992;
+  font-weight: 500;
+}
+.jobs-upper, .jobs-lower{
+  display: flex;
+  justify-content: space-between;
+}
+.jobs-lower{
+  margin-top: 20px;
+}
+
+.jobs-text p{
+  font-size: 2rem;
+  padding-bottom: 4rem;
+  /* padding-left: 10%; */
+  padding-right: 10%;
+}
+.jobs-card{
+  height: 38vh;
+  width: 36vw;
+  border: 1px solid #7b7b7b;
+  padding: 2%;
+  border-radius: 10px;
+  transition: all 500ms;
+}
+.jobs-card:hover{
+  cursor: pointer;
+  /* box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2); */
+  border: 1px solid #062744;
+  /* border: none; */
+  transform: translateY(-2%);
+  transition: all 500ms;
+  padding: 2%;
+}
+.job-intro{
+  line-height: 1vh;
+}
+.job-intro span{
+  display: flex;
+}
+.job-intro span h3{
+  font-size: 1.6rem;
+}
+.job-intro span img{
+  height: 2rem;
+  width: 2rem;
+  margin-left: 10px;
+}
+.jobs-count{
+  margin-top: 10px;
+  line-height: 1vh;
+}
+
+.more-btn{
+  text-align:center;
+  padding: 10px;
+  margin: 3rem;
+  height: 6vh;
+  width: 10vw;
+  border: 1px solid black;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.more-btn:hover{
+  background-color: #000a14;
+  color: #fff;
+}
+
+@media only screen and (max-width: 540px){
+  .jobs{
+    padding:0px 0px;
+  }
+  .jobs-heading{
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+  .jobs-text p{
+    font-size: 1.4rem;
+    padding-left:2rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  .jobs-upper, .jobs-lower{
+    display: block;
+    padding-left: 2rem;
+  }
+  .jobs-lower{
+    margin: 0;
+  }
+  .jobs-card{
+    height: 34vh;
+    width: 80vw;
+    border: 1px solid #7b7b7b;
+    padding: 4%;
+    border-radius: 10px;
+    transition: all 500ms;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+  }
+  .jobs-card:hover{
+    padding: 4%;
+  }
+
+  .job-intro span h3{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .job-intro span img{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-left: 10px;
+  }
+  .more-btn{
+    text-align:center;
+    padding: 2%;
+    margin: 2rem;
+    height: 6vh;
+    width: 50vw;
+    border: 1px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+}
+/*
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+ @-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+} */
 /********************************** Why Devtron Section ******************************/
 .why{
   height: 100vh;
@@ -387,104 +562,6 @@ intro-section,
 
 
 /********************************* Employee Review Section ****************************/
-/* .review{
-    height: 100vh;
-    width: 100vw;
-}
-
-.review-heading{
-    font-size: 2rem;
-    padding: 4rem 6rem;
-}
-
-.slide-row{
-    display: flex;
-    width: 3200px;
-    transition: 0.5s;
-}
-
-.slide-col{
-    width: 800px;
-    height: 400px;
-    position: relative;
-}
-
-.user-img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-}
-
-.user-img img{
-    height: 100%;
-    border-radius: 10px;
-}
-.user-text{
-    background: #2d3a59;
-    width: 520px;
-    height: 270px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #d3d4d6;
-    padding: 45px;
-    box-sizing: border-box;
-    z-index: 2;
-}
-
-.user-text p{
-    font-size: 18px;
-    line-height: 24px;
-}
-.user-text h3{
-    margin: 35px 0 5px;
-    color: #fff;
-}
-
-.emp-container{
-    width: 800px;
-    height: 400px;
-    position: absolute;
-    top: 50%;
-    margin-top: 25vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.indicator{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -50px;
-}
-.indi-btn{
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    margin: 4px;
-    border-radius: 15px;
-    background: #2d3a59;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.active{
-    width: 45px;
-}
-.emp-review{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-@media only screen and (max-width: 500px){
-    .review-heading{
-        padding: 2rem 1rem;
-        font-size: 1.4rem;
-    }
-
-
-} */
 .emp-section{
   height: 100vh !important;
   /* display: flex; */
