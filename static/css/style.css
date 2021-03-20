@@ -782,7 +782,7 @@ header .blue:hover::after{
 /********************************* Employee Review Section END ****************************/
 
 /************************************* Gallery Section END ********************************/
-.instagram > span {
+.instagram .instagram-heading {
   font-size: 3rem;
   padding-top: 4rem;
   padding-left: 10%;
@@ -816,7 +816,7 @@ header .blue:hover::after{
 
 @media screen and (max-width: 540px){
 
-  .instagram span{
+  .instagram .instagram-heading{
     font-size: 1rem;
     padding-top: 2rem;
     padding-left: 2rem;
