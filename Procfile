@@ -1,1 +1,1 @@
-web: gunicorn neutonDatabase.wsgi --log-file -
+web: gunicorn CarrerPage_Devtron.wsgi --log-file -
