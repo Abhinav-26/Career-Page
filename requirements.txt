@@ -1,0 +1,12 @@
+django
+django-rest-framework
+whitenoise
+psycopg2
+dj-database-url
+django-heroku
+gunicorn
+python-decouple
+numpy
+django-cors-headers
+requests
+Pillow
