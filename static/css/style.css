@@ -191,7 +191,9 @@ header .blue:hover::after{
 }
 .right-card img{
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
+  object-fit: contain;
+  float: right;
   border-top-left-radius: 200px;
   box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 1%), 0 6.7px 5.3px rgb(0 0 0 / 1%), 
   0 12.5px 10px rgb(0 0 0 / 2%), 0 22.3px 17.9px rgb(0 0 0 / 3%), 
@@ -412,6 +414,7 @@ header .blue:hover::after{
 /********************************** Why Devtron Section ******************************/
 .why{
   height: fit-content;
+  margin-top: 6vh;
   width: 100vw;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -862,7 +865,7 @@ header .blue:hover::after{
 
   .instagram .images{
     grid-template-areas:
-      "img6 img6"
+      "img0 img0"
       "img4 img1"
       "img5 img1";
   }
@@ -877,7 +880,7 @@ header .blue:hover::after{
   .img-3 {
     display: none;
   }
-  .img-0 {
+  .img-6 {
     display: none;
   }
   .img-2 {
