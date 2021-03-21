@@ -115,10 +115,10 @@ header .blue:hover::after{
     padding-left: 0px !important;
     padding-top: 0px !important;
   }
-  .devtron-nav{
+  /* .devtron-nav{
     display: none;
-  }
-  header{
+  } */
+  header .options ul{
     display: none;
   }
 }
@@ -233,15 +233,16 @@ header .blue:hover::after{
 
 /************************************* Vacancies at Devtron **************************/
 .jobs{
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   padding-left: 10%;
   padding-right: 10%;
 }
 
 .jobs-heading{
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 4rem;
+  padding-bottom: 1rem;
   /* color: #000a14; */
 }
 .jobs-upper, .jobs-lower{
@@ -301,18 +302,21 @@ header .blue:hover::after{
   margin: 3rem;
   height: 6vh;
   width: 10vw;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 6px;
   cursor: pointer;
-}
-.more-btn:hover{
-  background-color: #000a14;
+  background: linear-gradient(-45deg,#23a6d5, #23d5ab);
   color: #fff;
 }
+/* .more-btn:hover{
+  background-color: #000a14;
+  color: #fff;
+} */
 
 @media only screen and (max-width: 540px){
   .jobs{
     padding:0px 0px;
+    height: 100%;
   }
   .jobs-heading{
     font-size: 1rem;
@@ -407,21 +411,42 @@ header .blue:hover::after{
 } */
 /********************************** Why Devtron Section ******************************/
 .why{
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: #fff;
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 200px;
 
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
 .why-heading{
-  font-size: 3rem;
+  font-size: 1.2rem;
   padding-top: 4rem;
   padding-left: 10%;
+  padding-bottom: 0.4vh;
   /* color: #7b7992; */
   /* font-weight: 500; */
 }
 
 .why-text p{
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   padding-bottom: 4rem;
   padding-left: 10%;
   padding-right: 10%;
@@ -435,6 +460,8 @@ header .blue:hover::after{
 
 .why-values-lower{
   margin-top: 10vh;
+  padding-bottom: 10vh;
+  /* margin-bottom: 10vh; */
 }
 
 .left-data, .right-data{
@@ -445,7 +472,7 @@ header .blue:hover::after{
   border-right: 0;
   padding-left: 16px;
   /* border-image-source: linear-gradient(#253898, #5737D6); */
-  border-image-source: linear-gradient(#23a6d5, #e73c7e);
+  /* border-image-source: linear-gradient(#23a6d5, #e73c7e); */
 }
 .location-title{
   font-size: 1.2rem;
@@ -467,7 +494,8 @@ header .blue:hover::after{
   }
 
   .why-text p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    width: 90vw;
     padding-left:2rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
@@ -493,25 +521,27 @@ header .blue:hover::after{
 
 /********************************* Employee Review Section ****************************/
 .emp-section{
-  height: 100vh !important;
-  /* margin-bottom: 4vh !important; */
-  /* display: flex; */
+  height: fit-content;
+  padding-bottom: 10vh;
 }
 .review-heading{
-  font-size: 3rem;
+  font-size: 1.2rem;
   padding-top: 4rem;
   padding-left: 10%;
   /* color: #7b7992; */
   /* font-weight: 500; */
 }
 .review-text p{
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   padding-bottom: 4rem;
   padding-left: 10%;
   padding-right: 10%;
 }
 
 @media screen and (max-width: 540px){
+  .emp-section{
+    padding-bottom: 0;
+  }
   .review-heading{
     font-size: 1rem;
     padding-left: 2rem;
@@ -783,15 +813,16 @@ header .blue:hover::after{
 
 /************************************* Gallery Section END ********************************/
 .instagram .instagram-heading {
-  font-size: 3rem;
+  font-size: 1.2rem;
   padding-top: 4rem;
   padding-left: 10%;
+  padding-bottom: 0.4vh;
   /* color: #7b7992; */
   /* font-weight: 500; */
 }
 
 .instagram .insta-text p{
-  font-size: 2rem;
+  font-size: 1.2rem;
   padding-bottom: 4rem;
   padding-left: 10%;
   padding-right: 10%;
@@ -808,8 +839,8 @@ header .blue:hover::after{
   /* display: grid; */
   grid-template-areas:
     "img0 img1 img2 img2"
-    "img4 img1 img5 img6"
-    "img7 img7 img9 img6";
+    "img4 img1 img9 img6"
+    "img7 img7 img5 img6";
   /* grid-gap: 1px; */
   cursor: pointer;
 }
@@ -992,6 +1023,7 @@ header .blue:hover::after{
 .socials {
   /* display: flex; */
   justify-content: space-between;
+  cursor: pointer;
   /* width: 9vw; */
   /* padding: 0.4vw; */
 }
@@ -1087,9 +1119,9 @@ header .blue:hover::after{
   .footer-mobile-view{
     display: block;
     position: absolute;
-    margin-top: 100%;
+    margin-top: -34%;
     height: 100%;
-    background: aliceblue;
+    /* background: aliceblue; */
     width: 100%;
     border-top-left-radius: 100px;
     /* margin-left: 1rem; */
