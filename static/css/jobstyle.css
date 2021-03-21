@@ -144,10 +144,16 @@ header {
     padding-top: 4rem;
     padding-left: 10%;
   }
+
+  .outer-jobs{
+    width: 80%; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
   
   @media only screen and (max-width: 540px) {
     .all-jobs-heading {
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
   }
   .outer-jobs {
@@ -237,6 +243,27 @@ header {
     color: #fff;
   }
   
+  @media only screen and (max-width: 540px){
+    .more-btn-all{
+      margin-top: 18%;
+      float: right;
+      background: linear-gradient(-45deg,#23a6d5, #23d5ab);
+      color: #fff;
+      width: 34%;
+    }
+
+    .more-btn{
+      text-align: center;
+      padding: 10px;
+      height: 6vh;
+      border: none;
+      border-radius: 10px;
+    }
+
+    span p{
+      font-size: 0.8rem;
+    }
+  }
   
   .apply-now{
       /* margin: 0px; */
@@ -266,6 +293,25 @@ header {
     border-radius: 10px;
   }
   
+  @media only screen and (max-width: 540px){
+    .right-image img{
+      display: none;
+    }
+
+    .jobs-card-big{
+      width: 100%;
+    }
+    .outer-jobs{
+      width: 100%;
+    margin-left: 1rem;
+    /* margin-right: auto; */
+    overflow-x: hidden;
+    }
+
+
+
+  }
+
   .community {
     display: flex;
     padding-left: 10%;
@@ -307,17 +353,18 @@ header {
       display: block;
     }
     .community-heading {
-      font-size: 2rem;
+      font-size: 1.2rem;
       width: 90vw;
     }
     .community-text p {
-      font-size: 1.4rem;
-      padding-bottom: 3rem;
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+      width: 100%;
     }
   
     .community-image img {
       margin-top: 0;
-      width: 100vw;
+      /* width: 100vw; */
   
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
@@ -709,4 +756,10 @@ header {
   .comm-links{
       display: flex;
       justify-content:flex-start;
+}
+
+@media only screen and (max-width: 540px){
+  .comm-links{
+    padding-bottom: 3rem;
+  }
 }
