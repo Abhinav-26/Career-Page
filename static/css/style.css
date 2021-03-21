@@ -210,6 +210,7 @@ header .blue:hover::after{
     color: #fff;
     padding-top: 56vh;
     padding-left: 2rem;
+    margin-bottom: 0;
   }
 
   .left-half-text{
@@ -255,7 +256,7 @@ header .blue:hover::after{
 .jobs-heading{
   font-size: 2rem;
   padding-top: 4rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   /* color: #000a14; */
 }
 .jobs-upper, .jobs-lower{
@@ -454,7 +455,7 @@ header .blue:hover::after{
   font-size: 1.2rem;
   padding-top: 4rem;
   padding-left: 10%;
-  padding-bottom: 0.4vh;
+  padding-bottom: 1vh;
   /* color: #7b7992; */
   /* font-weight: 500; */
 }
