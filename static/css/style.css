@@ -428,16 +428,16 @@ header .blue:hover::after{
   height: fit-content;
   margin-top: 6vh;
   width: 100vw;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  color: #fff;
+  animation: gradient 15s ease infinite; */
+  color: #000;
   border-bottom-right-radius: 200px;
   border-top-right-radius: 200px;
 
 }
 
-@keyframes gradient {
+/* @keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -447,12 +447,10 @@ header .blue:hover::after{
   100% {
     background-position: 0% 50%;
   }
-}
-
-
+} */
 
 .why-heading{
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding-top: 4rem;
   padding-left: 10%;
   padding-bottom: 1vh;
@@ -486,7 +484,7 @@ header .blue:hover::after{
   border-left: 2px solid;
   border-right: 0;
   padding-left: 16px;
-  /* border-image-source: linear-gradient(#253898, #5737D6); */
+  border-image-source: linear-gradient(#23a6d5, #23d5ab);
   /* border-image-source: linear-gradient(#23a6d5, #e73c7e); */
 }
 .location-title{
@@ -531,7 +529,7 @@ header .blue:hover::after{
     margin-bottom: 5vh;
   }
 }
-/********************************** Why Devtron Section ******************************/
+/********************************** Why Devtron Section *******************************/
 
 
 /********************************* Employee Review Section ****************************/
@@ -540,7 +538,7 @@ header .blue:hover::after{
   padding-bottom: 10vh;
 }
 .review-heading{
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding-top: 4rem;
   padding-left: 10%;
   /* color: #7b7992; */
@@ -828,7 +826,7 @@ header .blue:hover::after{
 
 /************************************* Gallery Section END ********************************/
 .instagram .instagram-heading {
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding-top: 4rem;
   padding-left: 10%;
   padding-bottom: 0.4vh;
