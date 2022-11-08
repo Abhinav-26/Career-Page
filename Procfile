@@ -1,1 +1,0 @@
-web: gunicorn CarrerPage_Devtron.wsgi --log-file -
