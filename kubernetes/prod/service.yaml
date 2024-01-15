@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: career-page-svc
+spec:
+  selector:
+    app: career-page
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8888
+  type: ClusterIP
