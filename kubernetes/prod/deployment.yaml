@@ -17,3 +17,11 @@ spec:
         image: gcr.io/terraform-poc-410807/Career-Page.git:latest
         ports:
         - containerPort: 8888
+
+        resources:
+            limits:
+              cpu: "0.5"  # 0.5 CPU cores
+              memory: "512Mi"  # 512 Megabytes
+            requests:
+              cpu: "0.2"  # 0.2 CPU cores
+              memory: "256Mi"  # 256 Megabytes
