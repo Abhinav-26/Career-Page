@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: career-page-container
-        image: gcr.io/terraform-poc-410807/Career-Page.git:latest
+        image: gcr.io/terraform-poc-410807/career-page.git:latest
         ports:
         - containerPort: 8888
 
