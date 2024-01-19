@@ -1,0 +1,28 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - '-t'
+      - 'gcr.io/terraform-poc-410807/career-page.git:latest'
+      - ./
+  - name: gcr.io/cloud-builders/gcloud
+    env:
+      - CLOUDSDK_COMPUTE_REGION=us-central1
+      - CLOUDSDK_CONTAINER_CLUSTER=terraform-poc-410807-gke
+    args:
+      - container
+      - clusters
+      - get-credentials
+      - terraform-poc-410807-gke
+      - '--region'
+      - us-central1
+  - name: gcr.io/cloud-builders/gke-deploy
+    args:
+      - apply
+      - '--filename'
+      - ./kubernetes/prod
+      - '--cluster'
+      - terraform-poc-410807-gke
+      - '--location'
+      - us-central1
+timeout: 600s
